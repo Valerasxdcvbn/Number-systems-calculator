@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="/img/free-icon-binary-1822919.png" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Кальулятор Систем счисления</title>
+</head>
+<body>
+    <div id="calc"> 
+    <h1>Калькулятор систем счисления</h1>
+        <label for="start">Выберите систему счисления:</label>
+    <select name="pos_systems" id="systems">
+        <option value="nan">-- Выберите систему --</option>
+    <optgroup label="Позиционные системы">
+        <option value="decimal">Десятичная</option>
+        <option value="binary">Двоичная</option>
+        <option value="octal">Восмеричная</option>
+        <option value="hexadecimal">Шестнадцатеричная</option>
+    </optgroup>
+    <optgroup label="Не позиционные системы ">
+        <option value="roman">Римская</option>
+    </optgroup>
+    </select>
+
+    <input type="text" id="input_system" placeholder="Введите значение">
+
+    <br>
+    <br>
+
+    <label for="final">Выберите систему счисления в какой хотите получить ответ:</label>
+        <select name="pos_systems" id="final-systems">
+            <option value="nan">-- Выберите систему --</option>
+        <optgroup label="Позиционные системы">
+            <option value="decimal">Десятичная</option>
+            <option value="binary">Двоичная</option>
+            <option value="octal">Восмеричная</option>
+            <option value="hexadecimal">Шестнадцатеричная</option>
+        </optgroup>
+        <optgroup label="Не позиционные системы ">
+            <option value="roman">Римская</option>
+        </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+        <button onclick="calculation()">Расчитать</button> 
+        <br>
+        <br>
+        <div id="output_result">Результат:</div>
+    </div>  
+    <script src="scipt.js"></script>
+</body>
+</html>

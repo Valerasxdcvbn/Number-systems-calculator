@@ -1,0 +1,74 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#calc {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Метки и поля ввода */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+input[type="text"], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+/* Кнопка */
+button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Результат */
+#output_result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
