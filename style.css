@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -66,32 +65,30 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Результат */
 #output_result {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
 }
+
 select {
-    /* Общие параметры */
     display: inline-block;
-    width: 100%;   /* Ширина по необходимости */
-    padding: 10px; /* Внутренний отступ */
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
-    color: #333;   /* Цвет текста */
-    background-color: #fff; /* Фоновый цвет */
-    border: 1px solid #ccc; /* Рамка */
-    border-radius: 4px;     /* Скругление углов */
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* Стиль для опции <option> при наведении курсора */
 select option:hover {
-    background-color: #f0f0f0; /* Меняем фон при наведении */
-    cursor: pointer;           /* Указатель мыши меняется на "руку" */
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
-/* Стиль для активной выбранной опции */
+
 select option:checked, select option:selected {
-    background-color: #e6e6ff; /* Выделенный элемент */
-    color: #000;               /* Цвет текста выделенного элемента */
+    background-color: #e6e6ff;
+    color: #000;
 }
